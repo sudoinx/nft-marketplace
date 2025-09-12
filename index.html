@@ -11,7 +11,7 @@
       <div class="container">
         <div class="header-inner">
           <div class="header-logo">
-            <img src="./assets/images/nav/Logo.svg" />
+            <a href="#"><img src="./assets/images/nav/Logo.svg" /></a>
           </div>
 
           <nav class="nav">
@@ -37,7 +37,7 @@
                 than 20k NFT artists.
               </p>
 
-              <a href="#">Get Started</a>
+              <a class="btn" href="#">Get Started</a>
 
               <div class="result">
                 <div class="result-card">
@@ -79,9 +79,13 @@
               <div class="trending-card">
                 <img src="./assets/images/trending/card1.png" />
                 <div class="trending-small-element">
-                  <img src="./assets/images/trending/card1-1.png" />
-                  <img src="./assets/images/trending/card1-2.png" />
-                  <h5 class="small-element-text">1025+</h5>
+                  <a href="#"
+                    ><img src="./assets/images/trending/card1-1.png"
+                  /></a>
+                  <a href="#"
+                    ><img src="./assets/images/trending/card1-2.png"
+                  /></a>
+                  <a href="#"><h5 class="small-element-text">1025+</h5></a>
                 </div>
 
                 <h5>DSGN Animals</h5>
@@ -90,9 +94,13 @@
               <div class="trending-card">
                 <img src="./assets/images/trending/card2.png" />
                 <div class="trending-small-element">
-                  <img src="./assets/images/trending/card2-1.png" />
-                  <img src="./assets/images/trending/card2-2.png" />
-                  <h5 class="small-element-text">1025+</h5>
+                  <a href="#"
+                    ><img src="./assets/images/trending/card2-1.png"
+                  /></a>
+                  <a href="#"
+                    ><img src="./assets/images/trending/card2-2.png"
+                  /></a>
+                  <a href="#"><h5 class="small-element-text">1025+</h5></a>
                 </div>
 
                 <h5>Magic Mushrooms</h5>
@@ -101,9 +109,13 @@
               <div class="trending-card">
                 <img src="./assets/images/trending/card3.png" />
                 <div class="trending-small-element">
-                  <img src="./assets/images/trending/card3-1.png" />
-                  <img src="./assets/images/trending/card3-2.png" />
-                  <h5 class="small-element-text">1025+</h5>
+                  <a href="#"
+                    ><img src="./assets/images/trending/card3-1.png"
+                  /></a>
+                  <a href="#"
+                    ><img src="./assets/images/trending/card3-2.png"
+                  /></a>
+                  <a href="#"><h5 class="small-element-text">1025+</h5></a>
                 </div>
 
                 <h5>Disco Machines</h5>
@@ -236,36 +248,52 @@
 
             <div class="categories-cards">
               <div class="categories-card">
-                <img src="./assets/images/categories/card1.png" />
-                <div class="cart"><h5>Art</h5></div>
+                <a href="#">
+                  <img src="./assets/images/categories/card1.png" />
+                  <div class="cart"><h5>Art</h5></div>
+                </a>
               </div>
               <div class="categories-card">
-                <img src="./assets/images/categories/card2.png" />
-                <div class="cart"><h5>Collectibles</h5></div>
+                <a href="#">
+                  <img src="./assets/images/categories/card2.png" />
+                  <div class="cart"><h5>Collectibles</h5></div>
+                </a>
               </div>
               <div class="categories-card">
-                <img src="./assets/images/categories/card3.png" />
-                <div class="cart"><h5>Music</h5></div>
+                <a href="#">
+                  <img src="./assets/images/categories/card3.png" />
+                  <div class="cart"><h5>Music</h5></div>
+                </a>
               </div>
               <div class="categories-card">
-                <img src="./assets/images/categories/card4.png" />
-                <div class="cart"><h5>Photography</h5></div>
+                <a href="#">
+                  <img src="./assets/images/categories/card4.png" />
+                  <div class="cart"><h5>Photography</h5></div>
+                </a>
               </div>
               <div class="categories-card">
-                <img src="./assets/images/categories/card5.png" />
-                <div class="cart"><h5>Video</h5></div>
+                <a href="#">
+                  <img src="./assets/images/categories/card5.png" />
+                  <div class="cart"><h5>Video</h5></div>
+                </a>
               </div>
               <div class="categories-card">
-                <img src="./assets/images/categories/card6.png" />
-                <div class="cart"><h5>Utility</h5></div>
+                <a href="#">
+                  <img src="./assets/images/categories/card6.png" />
+                  <div class="cart"><h5>Utility</h5></div>
+                </a>
               </div>
               <div class="categories-card">
-                <img src="./assets/images/categories/card7.png" />
-                <div class="cart"><h5>Sport</h5></div>
+                <a href="#">
+                  <img src="./assets/images/categories/card7.png" />
+                  <div class="cart"><h5>Sport</h5></div>
+                </a>
               </div>
               <div class="categories-card">
-                <img src="./assets/images/categories/card8.png" />
-                <div class="cart"><h5>Virtual Worlds</h5></div>
+                <a href="#">
+                  <img src="./assets/images/categories/card8.png" />
+                  <div class="cart"><h5>Virtual Worlds</h5></div>
+                </a>
               </div>
             </div>
           </div>
@@ -402,8 +430,19 @@
                 straight to your inbox.
               </p>
 
-              <input type="email" placeholder="Enter your email here" />
-              <a href="#">Subscribe</a>
+              <form
+                id="main-form"
+                onsubmit=" return checkForm(this)"
+                method="post"
+              >
+                <input
+                  type="email"
+                  placeholder="Enter your email here"
+                  id="email"
+                  name="email"
+                />
+                <a type="button" id="btn" href="#">Subscribe</a>
+              </form>
             </div>
           </div>
         </div>
@@ -421,10 +460,18 @@
             </p>
             <p class="down">Join our community</p>
             <div class="icons-footer">
-              <img src="./assets/images/nav-footer/DiscordLogo.png" />
-              <img src="./assets/images/nav-footer/YoutubeLogo.png" />
-              <img src="./assets/images/nav-footer/TwitterLogo.png" />
-              <img src="./assets/images/nav-footer/InstagramLogo.png" />
+              <a href="#"
+                ><img src="./assets/images/nav-footer/DiscordLogo.png"
+              /></a>
+              <a href="#"
+                ><img src="./assets/images/nav-footer/YoutubeLogo.png"
+              /></a>
+              <a href="#"
+                ><img src="./assets/images/nav-footer/TwitterLogo.png"
+              /></a>
+              <a href="#"
+                ><img src="./assets/images/nav-footer/InstagramLogo.png"
+              /></a>
             </div>
           </div>
 
@@ -443,8 +490,21 @@
               Get exclusive promotions & updates <br />
               straight to your inbox.
             </p>
-            <input type="email" placeholder="Enter your email here" />
-            <a href="#">Subscribe</a>
+
+            <form
+              id="footer-form"
+              onsubmit=" return footerForm(this)"
+              method="post"
+            >
+              <input
+                type="email"
+                placeholder="Enter your email here"
+                id="footer-email"
+              />
+              <button type="submit">
+                <a id="btn" href="#">Subscribe</a>
+              </button>
+            </form>
           </div>
         </div>
 
@@ -454,5 +514,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

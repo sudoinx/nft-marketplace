@@ -8,6 +8,13 @@
   list-style: none;
 }
 
+button {
+  outline: none;
+  background-color: #a259ff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
 html,
 body {
   font-family: "Work Sans", sans-serif;
@@ -34,12 +41,25 @@ body {
   margin-right: 30px;
   font-weight: 600;
   line-height: 140%;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav a:hover {
+  color: #ccc;
+  transform: scale(1.05);
 }
 
 .btn {
   padding: 19px 30px;
   background-color: #a259ff;
   border-radius: 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #8b39f6;
+  transform: scale(1.05);
 }
 
 .hero {
@@ -605,6 +625,10 @@ body {
 
 .footer-left li {
   margin-bottom: 20px;
+}
+
+.footer-left a:hover {
+  color: #a5a4a4;
 }
 
 .footer-center h5 {
