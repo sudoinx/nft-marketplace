@@ -1,21 +1,36 @@
-// function checkForm(el) {
-//   const mailto = el.email.value;
-//   console.log(mailto);
+const mailTwo = document.getElementById("email").value;
+const mail = document.getElementById("footer-email").value;
 
-//   let fail = "";
+let fail = "";
 
-//   if (email == "") {
-//     fail = "Заполните поле електронной почты!";
-//   } else if (email.length <= 1) {
-//     fail = "Електронная почта должна быть больше одного символа!";
-//   }
+function checkForm(el) {
+  if ((mailTwo = "")) {
+    fail = "Заполните поле ввода!";
+  } else if (mailTwo.length <= 1) {
+    fail = "Електронная почта должна быть больше 1-го символа!";
+  }
 
-//   return false;
-// }
+  if (fail != "") {
+    return false;
+  } else {
+    alert("Електронная почта заполнена корректно!");
+  }
 
-// function footerForm(el) {
-//   const mailto = document.getElementById("footer-email");
-//   console.log(mailto);
+  return false;
+}
 
-//   return false;
-// }
+function footerForm(el) {
+  if ((mail = "")) {
+    fail = "Заполните поле ввода!";
+  } else if (mail.length <= 1) {
+    fail = "Електронная почта должна быть больше 1-го символа!";
+  }
+
+  if (fail != "") {
+    return false;
+  } else {
+    alert("Електронная почта заполнена корректно!");
+  }
+
+  return false;
+}
